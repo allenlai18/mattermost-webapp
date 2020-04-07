@@ -50,7 +50,7 @@ export default class JoinLeaveSection extends React.PureComponent<Props, State> 
 
         onUpdateSection();
     };
-    render() :JSX.Element {
+    render(): JSX.Element {
         const {joinLeaveState} = this.state;
         if (this.props.activeSection === AdvancedSections.JOIN_LEAVE) {
             return (
