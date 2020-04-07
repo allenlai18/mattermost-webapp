@@ -9,7 +9,7 @@ import {Preferences} from 'mattermost-redux/constants';
 import {get as getPreference} from 'mattermost-redux/selectors/entities/preferences';
 import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
 
-import JoinLeaveSection from './join_leave_section.jsx';
+import JoinLeaveSection from './join_leave_section';
 
 function mapStateToProps(state) {
     const joinLeave = getPreference(
