@@ -15,7 +15,7 @@ interface Props {
     activeSection?: string;
     currentUserId: string;
     joinLeave: string;
-    onUpdateSection: (...args: any[]) => any;
+    onUpdateSection: (section?: string) => any;
     renderOnOffLabel: (...args: any[]) => any;
     actions: {
         savePreferences: (...args: any[]) => any;
@@ -50,7 +50,7 @@ export default class JoinLeaveSection extends React.PureComponent<Props, State> 
 
         onUpdateSection();
     };
-    render() {
+    render() :JSX.Element {
         const {joinLeaveState} = this.state;
         if (this.props.activeSection === AdvancedSections.JOIN_LEAVE) {
             return (
